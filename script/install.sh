@@ -152,17 +152,6 @@ case "$answer" in
 esac
 
 echo "=========="
-echo "FromScratch (y/n)"
-read answer
-case "$answer" in
-	y) echo "wird installiert"
-		sudo snap install fromscratch
-		;;
-	n) echo "wird nicht installiert"
-		;;
-esac
-
-echo "=========="
 echo "Java OpenJDK 14 (y/n)"
 read answer
 case "$answer" in
