@@ -14,8 +14,7 @@ echo ""
 echo "=========================================="
 echo ""
 
-cd Downloads
-ln -s /var/lib/snapd/snap /snap
+sudo ln -s /var/lib/snapd/snap /snap
 sudo pacman -Syu
 
 clear
@@ -144,7 +143,7 @@ echo "Docker (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S dockery
+			sudo pacman -S docker
 			docker version
 		;;
 	n) echo "wird nicht installiert"
@@ -431,7 +430,7 @@ echo "Notion(y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-	    sudo pacman -S notion
+	    sudo snap install notion-snap
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -499,7 +498,7 @@ esac
 
 clear
 echo "=========================================="
-echo "Pyhon (y/n)"
+echo "Python (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
@@ -697,7 +696,6 @@ echo "Visual Studio Code IDE (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-		firefox https://code.visualstudio.com/download#
 	    sudo snap install code --classic
 		;;
 	n) echo "wird nicht installiert"
@@ -710,7 +708,7 @@ echo "Vivaldi Browser (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-		sudo pacman -S vivaldi
+			sudo pacman -S vivaldi
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -759,9 +757,19 @@ read answer
 case "$answer" in
 	y) echo "wird installiert"
 	    sudo pacman -S zsh
-		zsh --version
-		sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-		firefox https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
+			zsh --version
+		;;
+	n) echo "wird nicht installiert"
+		;;
+esac
+
+clear
+echo "=========================================="
+echo "Oh-my-zsh Extension (y/n)"
+read answer
+case "$answer" in
+	y) echo "wird installiert"
+			sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -819,23 +827,21 @@ echo "Shortcut recommendation:"
 echo ""
 echo "Atom								Ctrl+Alt+E"
 echo "Authy								Ctrl+Alt+A"
-echo "Calculator					Ctrl+Alt+C"
+echo "Calculator					Calculator"
 echo "Flameshot	gui				Print"
 echo "Gitkraken						Ctrl+Alt+G"
 echo "Home Folder					Ctrl+Alt+F"
-echo "Launch calculator 	Ctral+Alt+C"
-echo "Launch web browser 	Ctrl+Alt+W"
 echo "Notion							Ctrl+Alt+N"
 echo "Settings						Ctrl+Alt+S"
 echo "Spotify							Ctrl+Alt+X"
 echo "Web Browser					Ctrl+Alt+W"
-echo "VS Code							Ctrl+Alt+E"
+echo "ViSual Studio Code	Ctrl+Alt+C"
 echo ""
 
 echo "=========================================="
 echo "Puuhh, that was a lot of work"
 echo "Don't forget the recommendations above!"
-echo "Should we reboot the System?"
+echo "Should we reboot the System? (y/n)"
 echo ""
 read answer
 case "$answer" in
