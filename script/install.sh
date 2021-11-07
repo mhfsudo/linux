@@ -752,6 +752,30 @@ esac
 
 clear
 echo "=========================================="
+echo "Yubico Authenticator (y/n)"
+read answer
+case "$answer" in
+	y) echo "wird installiert"
+	    sudo snap install yubioath-desktop
+		;;
+	n) echo "wird nicht installiert"
+		;;
+esac
+
+clear
+echo "=========================================="
+echo "YubiKey Manager (y/n)"
+read answer
+case "$answer" in
+	y) echo "wird installiert"
+	    sudo pacman -S yubikey-manager
+		;;
+	n) echo "wird nicht installiert"
+		;;
+esac
+
+clear
+echo "=========================================="
 echo "ZSH Shell (y/n)"
 read answer
 case "$answer" in
