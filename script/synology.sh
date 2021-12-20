@@ -5,18 +5,21 @@
 # 2. Terminal & SNMP
 # 3. Enable SSH service
 
-echo "=========================================="
+echo "==============================================================================="
 echo ""
-echo " mhfmhf   mhfmhf  mhf      mhf  mhfmhfmhf "
-echo " mhf mhf mhf mhf  mhf      mhf  mhf       "
-echo " mhf   mhf   mhf  mhfmhfmhfmhf  mhfmhf    "
-echo " mhf         mhf  mhf      mhf  mhf       "
-echo " mhf         mhf  mhf      mhf  mhf       "
+echo "      __    ___  ___   ___  _______		"
+echo "     /  \__/  / /  /  /  / /  ____/		"
+echo "    /        / /  /__/  / /  /__			"
+echo "   /  /\_/  / /  ___   / /  ___/			"
+echo "  /  /  /  / /  /  /  / /  /				"
+echo " /__/  /__/ /__/  /__/ /__/ 				"
 echo ""
 echo "Good, let's connect with Synology"
 echo ""
 echo "cd /var/services/homes/Michae/Drive/"
 echo "ls"
+echo ""
+echo ".........................................."
 echo ""
 
 ssh michael@1.1.1.245 -p 77
