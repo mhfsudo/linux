@@ -1,25 +1,25 @@
 #!/bin/bash
 
-echo "==============================================================================="
-echo ""
-echo "      __    ___  ___   ___  _______		"
-echo "     /  \__/  / /  /  /  / /  ____/		"
-echo "    /        / /  /__/  / /  /__			"
-echo "   /  /\_/  / /  ___   / /  ___/			"
-echo "  /  /  /  / /  /  /  / /  /				"
-echo " /__/  /__/ /__/  /__/ /__/ 				"
+echo "=============================================================================="
+echo "                                      "
+echo "       __    ___  ___   ___  _______	"
+echo "      /  \__/  / /  /  /  / /  ____/  "
+echo "     /        / /  /__/  / /  /__     "
+echo "    /  /\_/  / /  ___   / /  ___/     "
+echo "   /  /  /  / /  /  /  / /  /		    "
+echo "  /__/  /__/ /__/  /__/ /__/ 		    "
+echo "                                      "
+echo "======================================"
 echo ""
 echo "Good, let us install some programs"
 echo "first we update the system"
-echo ""
-echo ".........................................."
 echo ""
 
 sudo ln -s /var/lib/snapd/snap /snap
 sudo pacman -Syu
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Anaconda for Python(y/n)"
 read answer
 case "$answer" in
@@ -31,7 +31,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Atom Text Editor (y/n)"
 read answer
 case "$answer" in
@@ -43,7 +43,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Authy (y/n)"
 read answer
 case "$answer" in
@@ -55,7 +55,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Bitwarden Password Manager (y/n)"
 read answer
 case "$answer" in
@@ -67,7 +67,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Brave (y/n)"
 read answer
 case "$answer" in
@@ -79,7 +79,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Cheese Webcam (y/n)"
 read answer
 case "$answer" in
@@ -91,7 +91,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Chrome (y/n)"
 read answer
 case "$answer" in
@@ -103,7 +103,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Chromium (y/n)"
 read answer
 case "$answer" in
@@ -115,7 +115,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Dconf Editor (y/n)"
 read answer
 case "$answer" in
@@ -127,7 +127,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Deja Dup Backup Tool (y/n)"
 read answer
 case "$answer" in
@@ -139,7 +139,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Docker (y/n)"
 read answer
 case "$answer" in
@@ -152,7 +152,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Draw.io (y/n)"
 read answer
 case "$answer" in
@@ -164,7 +164,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Java OpenJDK 14 (y/n)"
 read answer
 case "$answer" in
@@ -177,7 +177,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Eclipse IDE (y/n)"
 read answer
 case "$answer" in
@@ -189,7 +189,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Fish Shell (y/n)"
 read answer
 case "$answer" in
@@ -201,7 +201,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Flameshot Screenshot Tool (y/n)"
 read answer
 case "$answer" in
@@ -213,7 +213,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Gimp (y/n)"
 read answer
 case "$answer" in
@@ -225,7 +225,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Gradle (y/n)"
 read answer
 case "$answer" in
@@ -238,7 +238,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Groovy (y/n)"
 read answer
 case "$answer" in
@@ -251,7 +251,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "GitKraken (y/n)"
 read answer
 case "$answer" in
@@ -263,7 +263,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Hyper Terminal (y/n)"
 read answer
 case "$answer" in
@@ -276,7 +276,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Helm (y/n)"
 read answer
 case "$answer" in
@@ -288,7 +288,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "JetBrains Tools (y/n)"
 read answer
 case "$answer" in
@@ -300,7 +300,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Jupyter Notebook for Python (y/n)"
 read answer
 case "$answer" in
@@ -317,7 +317,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "K8s Kubectl (y/n)"
 read answer
 case "$answer" in
@@ -329,7 +329,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "K8s Minikube (y/n)"
 read answer
 case "$answer" in
@@ -341,7 +341,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "KeePass XC (y/n)"
 read answer
 case "$answer" in
@@ -353,7 +353,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Libre Office (y/n)"
 read answer
 case "$answer" in
@@ -365,7 +365,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Maven (y/n)"
 read answer
 case "$answer" in
@@ -378,7 +378,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Microsoft Teams (y/n)"
 read answer
 case "$answer" in
@@ -390,7 +390,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "MySQL Workbench (y/n)"
 read answer
 case "$answer" in
@@ -402,7 +402,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Noson Sonos Controller (y/n)"
 read answer
 case "$answer" in
@@ -414,7 +414,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Notepad++ Text Editor(y/n)"
 read answer
 case "$answer" in
@@ -426,7 +426,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Notion(y/n)"
 read answer
 case "$answer" in
@@ -438,7 +438,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "OneNote (y/n)"
 read answer
 case "$answer" in
@@ -450,7 +450,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Opera (y/n)"
 read answer
 case "$answer" in
@@ -462,7 +462,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Postman (y/n)"
 read answer
 case "$answer" in
@@ -474,7 +474,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "ProtonMail Bridge (y/n)"
 read answer
 case "$answer" in
@@ -486,7 +486,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "ProtonMail VPN (y/n)"
 read answer
 case "$answer" in
@@ -498,7 +498,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Python (y/n)"
 read answer
 case "$answer" in
@@ -511,7 +511,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Signal (y/n)"
 read answer
 case "$answer" in
@@ -523,7 +523,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Spaceship Shell Erweiterung (y/n)"
 read answer
 case "$answer" in
@@ -535,7 +535,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Spotify (y/n)"
 read answer
 case "$answer" in
@@ -547,7 +547,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Starship Shell Erweiterung (y/n)"
 read answer
 case "$answer" in
@@ -559,7 +559,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Sublime Text (y/n)"
 read answer
 case "$answer" in
@@ -571,7 +571,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Synology Drive (y/n)"
 read answer
 case "$answer" in
@@ -583,7 +583,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Telegram (y/n)"
 read answer
 case "$answer" in
@@ -595,7 +595,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "TexMaker (y/n)"
 read answer
 case "$answer" in
@@ -607,7 +607,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Threema (y/n)"
 read answer
 case "$answer" in
@@ -619,7 +619,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Thunderbird Mail (y/n)"
 read answer
 case "$answer" in
@@ -631,7 +631,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Timeshift (y/n)"
 read answer
 case "$answer" in
@@ -643,7 +643,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Todoist (y/n)"
 read answer
 case "$answer" in
@@ -655,7 +655,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Tweaks (y/n)"
 read answer
 case "$answer" in
@@ -668,7 +668,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Vim (y/n)"
 read answer
 case "$answer" in
@@ -680,7 +680,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Virtual Box (y/n)"
 read answer
 case "$answer" in
@@ -692,7 +692,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Visual Studio Code IDE (y/n)"
 read answer
 case "$answer" in
@@ -704,7 +704,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Vivaldi Browser (y/n)"
 read answer
 case "$answer" in
@@ -716,7 +716,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "VLC Player (y/n)"
 read answer
 case "$answer" in
@@ -728,7 +728,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Whatsapp (y/n)"
 read answer
 case "$answer" in
@@ -740,7 +740,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Wireshark (y/n)"
 read answer
 case "$answer" in
@@ -752,7 +752,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Yubico Authenticator (y/n)"
 read answer
 case "$answer" in
@@ -764,7 +764,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "YubiKey Manager (y/n)"
 read answer
 case "$answer" in
@@ -776,7 +776,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "ZSH Shell (y/n)"
 read answer
 case "$answer" in
@@ -789,7 +789,7 @@ case "$answer" in
 esac
 
 clear
-echo ".........................................."
+echo "======================================"
 echo "Oh-my-zsh Extension (y/n)"
 read answer
 case "$answer" in
@@ -802,7 +802,7 @@ esac
 
 sudo  pacman -Syu
 
-echo ".........................................."
+echo "======================================"
 echo "Alias recommendation:"
 echo "vim ~/.bashrc"
 echo "vim ~/.config/fish/config.fish"
@@ -811,7 +811,7 @@ echo "alias po='bash .poweroff.sh'"
 echo "alias re='bash .reboot.sh'"
 echo "alias up='bash .update.sh'"
 echo ""
-echo ".........................................."
+echo "======================================"
 echo "Dconf Editor recommendation:"
 echo ""
 echo "Center Ubuntu Dock"
@@ -823,7 +823,7 @@ echo "org/gnome/shell/extensions/dash-to-dock/custom-theme-running-dots-color (#
 echo "Show icon backlit"
 echo "org/gnome/shell/extensions/dash-to-dock/unity-backlit-items"
 echo ""
-echo ".........................................."
+echo "======================================"
 echo "Shell extensions recommendation"
 echo ""
 echo "https://extensions.gnome.org/extension/16/auto-move-windows/"
@@ -847,23 +847,23 @@ echo "https://extensions.gnome.org/extension/1266/transparent-top-bar/"
 echo "https://extensions.gnome.org/extension/19/user-themes/"
 echo "https://extensions.gnome.org/extension/21/workspace-indicator/"
 echo ""
-echo ".........................................."
+echo "======================================"
 echo "Shortcut recommendation:"
 echo ""
-echo "Atom								Ctrl+Alt+E"
-echo "Authy								Ctrl+Alt+A"
-echo "Calculator					Calculator"
-echo "Flameshot	gui				Print"
-echo "Gitkraken						Ctrl+Alt+G"
-echo "Home Folder					Ctrl+Alt+F"
-echo "Notion							Ctrl+Alt+N"
-echo "Settings						Ctrl+Alt+S"
-echo "Spotify							Ctrl+Alt+X"
-echo "Web Browser					Ctrl+Alt+W"
+echo "Atom					Ctrl+Alt+E"
+echo "Authy					Ctrl+Alt+A"
+echo "Calculator			Calculator"
+echo "Flameshot	gui			Print"
+echo "Gitkraken				Ctrl+Alt+G"
+echo "Home Folder			Ctrl+Alt+F"
+echo "Notion				Ctrl+Alt+N"
+echo "Settings				Ctrl+Alt+S"
+echo "Spotify				Ctrl+Alt+X"
+echo "Web Browser			Ctrl+Alt+W"
 echo "ViSual Studio Code	Ctrl+Alt+C"
 echo ""
 
-echo ".........................................."
+echo "======================================"
 echo "Puuhh, that was a lot of work"
 echo "Don't forget the recommendations above!"
 echo "Should we reboot the System? (y/n)"
@@ -880,4 +880,4 @@ esac
 echo ""
 echo "Good, we're done"
 echo ""
-echo "=========================================="
+echo "=============================================================================="
