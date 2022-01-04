@@ -475,6 +475,18 @@ esac
 
 clear
 echo "======================================"
+echo "ProtonMail Electron (y/n)"
+read answer
+case "$answer" in
+	y) echo "wird installiert"
+	    sudo snap install electron-mail
+		;;
+	n) echo "wird nicht installiert"
+		;;
+esac
+
+clear
+echo "======================================"
 echo "ProtonMail Bridge (y/n)"
 read answer
 case "$answer" in
