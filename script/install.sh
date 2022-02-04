@@ -439,6 +439,18 @@ esac
 
 clear
 echo "======================================"
+echo "OnlyOffice(y/n)"
+read answer
+case "$answer" in
+	y) echo "wird installiert"
+	    sudo pacman -S onlyoffice-desktopeditors
+		;;
+	n) echo "wird nicht installiert"
+		;;
+esac
+
+clear
+echo "======================================"
 echo "OneNote (y/n)"
 read answer
 case "$answer" in
