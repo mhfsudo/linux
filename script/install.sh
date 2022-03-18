@@ -60,7 +60,7 @@ echo "Bitwarden Password Manager (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo snap install bitwarden
+		sudo flatpak install flathub com.bitwarden.desktop
 		;;
 	n) echo "wird nicht installiert"
 		;;
