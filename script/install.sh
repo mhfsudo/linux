@@ -12,7 +12,7 @@ echo "                                      "
 echo "======================================"
 echo ""
 echo "Good, let us install some programs"
-echo "first we update the system"
+echo "First we install some required components and update the system"
 echo ""
 
 sudo ln -s /var/lib/snapd/snap /snap
@@ -24,7 +24,7 @@ echo "Anaconda for Python(y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			pacman -Sy libxau libxi libxss libxtst libxcursor libxcomposite libxdamage libxfixes libxrandr libxrender mesa-libgl  alsa-lib libglvnd
+		sudo pacman -Sy libxau libxi libxss libxtst libxcursor libxcomposite libxdamage libxfixes libxrandr libxrender mesa-libgl  alsa-lib libglvnd
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -36,7 +36,7 @@ echo "Atom Text Editor (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S atom
+		sudo pacman -S atom
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -48,7 +48,7 @@ echo "Authy (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo snap install authy
+		sudo snap install authy
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -72,7 +72,7 @@ echo "Brave (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S brave-browser
+		sudo pacman -S brave-browser
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -84,7 +84,7 @@ echo "Cheese Webcam (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S cheese
+		sudo pacman -S cheese
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -96,7 +96,7 @@ echo "Chrome (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			firefox https://www.google.com
+		firefox https://www.google.com
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -108,7 +108,7 @@ echo "Chromium (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S chromium
+		sudo pacman -S chromium
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -120,7 +120,7 @@ echo "Dconf Editor (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S dconf-editor
+		sudo pacman -S dconf-editor
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -132,7 +132,7 @@ echo "Deja Dup Backup Tool (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S deja-dup
+		sudo pacman -S deja-dup
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -144,8 +144,8 @@ echo "Docker (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S docker
-			docker version
+		sudo pacman -S docker
+		docker version
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -157,7 +157,7 @@ echo "Draw.io (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo snap install drawio
+		sudo snap install drawio
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -169,8 +169,8 @@ echo "Java OpenJDK 14 (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S jre-openjdk-headless jre-openjdk jdk-openjdk openjdk-doc openjdk-src
-			java -version
+		sudo pacman -S jre-openjdk-headless jre-openjdk jdk-openjdk openjdk-doc openjdk-src
+		java -version
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -182,7 +182,7 @@ echo "Eclipse IDE (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo snap install eclipse --classic
+		sudo snap install eclipse --classic
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -194,7 +194,7 @@ echo "Fish Shell (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S fish
+		sudo pacman -S fish
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -206,7 +206,7 @@ echo "Flameshot Screenshot Tool (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S flameshot
+		sudo pacman -S flameshot
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -218,7 +218,7 @@ echo "Gimp (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S gimp
+		sudo pacman -S gimp
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -230,8 +230,8 @@ echo "Gradle (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S gradle
-			gradle -v
+		sudo pacman -S gradle
+		gradle -v
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -243,8 +243,8 @@ echo "Groovy (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S groovy
-			groovy -version
+		sudo pacman -S groovy
+		groovy -version
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -268,8 +268,8 @@ echo "Hyper Terminal (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			firefox https://releases.hyper.is/download/AppImage
-			sudo pacman -S appimagelauncher
+		firefox https://releases.hyper.is/download/AppImage
+		sudo pacman -S appimagelauncher
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -281,7 +281,7 @@ echo "Helm (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo snap install helm --classic
+		sudo snap install helm --classic
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -293,7 +293,7 @@ echo "JetBrains Tools (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			firefox https://www.jetbrains.com/de-de/toolbox-app/download/download-thanks.html?platform=linux
+		firefox https://www.jetbrains.com/de-de/toolbox-app/download/download-thanks.html?platform=linux
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -305,12 +305,12 @@ echo "Jupyter Notebook for Python (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S python-pip
-			sudo pip install pip --upgrade
-			sudo pip install jupyter
-			sudo pip install jupyterlab
-			sudo pip install notebook
-			sudo pacman -S pandoc
+		sudo pacman -S python-pip
+		sudo pip install pip --upgrade
+		sudo pip install jupyter
+		sudo pip install jupyterlab
+		sudo pip install notebook
+		sudo pacman -S pandoc
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -322,7 +322,7 @@ echo "K8s Kubectl (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo snap install kubectl --classic
+		sudo snap install kubectl --classic
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -334,7 +334,7 @@ echo "K8s Minikube (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S minikube
+		sudo pacman -S minikube
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -346,7 +346,7 @@ echo "KeePass XC (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S keepassxc
+		sudo pacman -S keepassxc
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -358,7 +358,7 @@ echo "Libre Office (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S libreoffice-fresh
+		sudo pacman -S libreoffice-fresh
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -370,8 +370,8 @@ echo "Maven (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S maven
-			mvn -version
+		sudo pacman -S maven
+		mvn -version
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -395,7 +395,7 @@ echo "MySQL Workbench (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S mysql-workbench
+		sudo pacman -S mysql-workbench
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -527,8 +527,8 @@ echo "Python (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S python3 python3-venv python3-pip
-			python3 --version
+		sudo pacman -S python3 python3-venv python3-pip
+		python3 --version
 		;;
 	n) echo "wird nicht installiert"
 		;;
