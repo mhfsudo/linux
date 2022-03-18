@@ -407,7 +407,7 @@ echo "Noson Sonos Controller (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-	    sudo snap install noson
+	    sudo flatpak install flathub io.github.janbar.noson
 		;;
 	n) echo "wird nicht installiert"
 		;;
