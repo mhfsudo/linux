@@ -814,8 +814,6 @@ case "$answer" in
 		;;
 esac
 
-sudo  pacman -Syu
-
 echo "======================================"
 echo "Puuhh, that was a lot of work"
 echo "Don't forget the recommendations above!"
@@ -824,7 +822,8 @@ echo ""
 read answer
 case "$answer" in
   y) echo "wird neugestartet"
-  			sudo reboot
+		sudo  pacman -Syu
+  		sudo reboot
     	;;
   n) echo "wird nicht neugestartet"
     	;;
