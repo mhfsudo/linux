@@ -12,7 +12,7 @@ echo "                                      "
 echo "======================================"
 echo ""
 echo "Good, let us install some programs"
-echo "first we update the system"
+echo "First we install some required components and update the system"
 echo ""
 
 sudo ln -s /var/lib/snapd/snap /snap
@@ -24,7 +24,7 @@ echo "Anaconda for Python(y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			pacman -Sy libxau libxi libxss libxtst libxcursor libxcomposite libxdamage libxfixes libxrandr libxrender mesa-libgl  alsa-lib libglvnd
+		sudo pacman -Sy libxau libxi libxss libxtst libxcursor libxcomposite libxdamage libxfixes libxrandr libxrender mesa-libgl  alsa-lib libglvnd
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -36,7 +36,7 @@ echo "Atom Text Editor (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S atom
+		sudo pacman -S atom
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -48,7 +48,7 @@ echo "Authy (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo snap install authy
+		sudo snap install authy
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -60,7 +60,7 @@ echo "Bitwarden Password Manager (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo snap install bitwarden
+		sudo flatpak install flathub com.bitwarden.desktop
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -72,7 +72,7 @@ echo "Brave (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S brave-browser
+		sudo pacman -S brave-browser
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -84,7 +84,7 @@ echo "Cheese Webcam (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S cheese
+		sudo pacman -S cheese
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -96,7 +96,7 @@ echo "Chrome (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			firefox https://www.google.com
+		firefox https://www.google.com
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -108,7 +108,7 @@ echo "Chromium (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S chromium
+		sudo pacman -S chromium
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -120,7 +120,7 @@ echo "Dconf Editor (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S dconf-editor
+		sudo pacman -S dconf-editor
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -132,7 +132,7 @@ echo "Deja Dup Backup Tool (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S deja-dup
+		sudo pacman -S deja-dup
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -144,8 +144,8 @@ echo "Docker (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S docker
-			docker version
+		sudo pacman -S docker
+		docker version
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -157,7 +157,7 @@ echo "Draw.io (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo snap install drawio
+		sudo snap install drawio
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -169,8 +169,8 @@ echo "Java OpenJDK 14 (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S jre-openjdk-headless jre-openjdk jdk-openjdk openjdk-doc openjdk-src
-			java -version
+		sudo pacman -S jre-openjdk-headless jre-openjdk jdk-openjdk openjdk-doc openjdk-src
+		java -version
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -182,7 +182,7 @@ echo "Eclipse IDE (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo snap install eclipse --classic
+		sudo snap install eclipse --classic
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -194,7 +194,7 @@ echo "Fish Shell (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S fish
+		sudo pacman -S fish
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -206,7 +206,7 @@ echo "Flameshot Screenshot Tool (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S flameshot
+		sudo pacman -S flameshot
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -218,7 +218,7 @@ echo "Gimp (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S gimp
+		sudo pacman -S gimp
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -230,8 +230,8 @@ echo "Gradle (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S gradle
-			gradle -v
+		sudo pacman -S gradle
+		gradle -v
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -243,8 +243,8 @@ echo "Groovy (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S groovy
-			groovy -version
+		sudo pacman -S groovy
+		groovy -version
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -256,7 +256,7 @@ echo "GitKraken (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo snap install gitkraken --classic
+		sudo flatpak install flathub com.axosoft.GitKraken
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -268,8 +268,8 @@ echo "Hyper Terminal (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			firefox https://releases.hyper.is/download/AppImage
-			sudo pacman -S appimagelauncher
+		firefox https://releases.hyper.is/download/AppImage
+		sudo pacman -S appimagelauncher
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -281,7 +281,7 @@ echo "Helm (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo snap install helm --classic
+		sudo snap install helm --classic
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -293,7 +293,7 @@ echo "JetBrains Tools (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			firefox https://www.jetbrains.com/de-de/toolbox-app/download/download-thanks.html?platform=linux
+		firefox https://www.jetbrains.com/de-de/toolbox-app/download/download-thanks.html?platform=linux
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -305,12 +305,12 @@ echo "Jupyter Notebook for Python (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S python-pip
-			sudo pip install pip --upgrade
-			sudo pip install jupyter
-			sudo pip install jupyterlab
-			sudo pip install notebook
-			sudo pacman -S pandoc
+		sudo pacman -S python-pip
+		sudo pip install pip --upgrade
+		sudo pip install jupyter
+		sudo pip install jupyterlab
+		sudo pip install notebook
+		sudo pacman -S pandoc
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -322,7 +322,7 @@ echo "K8s Kubectl (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo snap install kubectl --classic
+		sudo snap install kubectl --classic
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -334,7 +334,7 @@ echo "K8s Minikube (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S minikube
+		sudo pacman -S minikube
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -346,7 +346,7 @@ echo "KeePass XC (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S keepassxc
+		sudo pacman -S keepassxc
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -358,7 +358,7 @@ echo "Libre Office (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S libreoffice-fresh
+		sudo pacman -S libreoffice-fresh
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -370,8 +370,8 @@ echo "Maven (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S maven
-			mvn -version
+		sudo pacman -S maven
+		mvn -version
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -383,7 +383,7 @@ echo "Microsoft Teams (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo snap install teams-insiders
+		sudo flatpak install flathub com.github.IsmaelMartinez.teams_for_linux
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -395,7 +395,7 @@ echo "MySQL Workbench (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S mysql-workbench
+		sudo pacman -S mysql-workbench
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -407,7 +407,7 @@ echo "Noson Sonos Controller (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-	    sudo snap install noson
+	    sudo flatpak install flathub io.github.janbar.noson
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -432,6 +432,18 @@ read answer
 case "$answer" in
 	y) echo "wird installiert"
 	    sudo snap install notion-snap
+		;;
+	n) echo "wird nicht installiert"
+		;;
+esac
+
+clear
+echo "======================================"
+echo "OnlyOffice(y/n)"
+read answer
+case "$answer" in
+	y) echo "wird installiert"
+	    sudo pacman -S onlyoffice-desktopeditors
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -479,7 +491,7 @@ echo "ProtonMail Electron (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-	    sudo snap install electron-mail
+	    sudo flatpak install flathub com.github.vladimiry.ElectronMail
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -515,8 +527,8 @@ echo "Python (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S python3 python3-venv python3-pip
-			python3 --version
+		sudo pacman -S python3 python3-venv python3-pip
+		python3 --version
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -552,7 +564,7 @@ echo "Spotify (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-		sudo snap install spotify
+		sudo flatpak install flathub com.spotify.Client
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -624,7 +636,7 @@ echo "Threema (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-	    sudo snap install threemadeskaqua
+	    sudo flatpak install flathub io.bit3.ThreemaQTp
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -709,7 +721,7 @@ echo "Visual Studio Code IDE (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-	    sudo snap install code --classic
+	    sudo flatpak install flathub com.visualstudio.code
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -721,7 +733,7 @@ echo "Vivaldi Browser (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S vivaldi
+		sudo pacman -S vivaldi
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -745,7 +757,7 @@ echo "Whatsapp (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-	    sudo snap install whatsdesk
+	    sudo flatpak install flathub io.github.mimbrero.WhatsAppDesktop
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -794,86 +806,13 @@ read answer
 case "$answer" in
 	y) echo "wird installiert"
 	    sudo pacman -S zsh
-			zsh --version
+		zsh --version
+		sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+		firefox https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
 		;;
 	n) echo "wird nicht installiert"
 		;;
 esac
-
-clear
-echo "======================================"
-echo "Oh-my-zsh Extension (y/n)"
-read answer
-case "$answer" in
-	y) echo "wird installiert"
-			sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-		;;
-	n) echo "wird nicht installiert"
-		;;
-esac
-
-sudo  pacman -Syu
-
-echo "======================================"
-echo "Alias recommendation:"
-echo "vim ~/.bashrc"
-echo "vim ~/.config/fish/config.fish"
-echo "vim ~/.zshrc"
-echo "alias po='bash .poweroff.sh'"
-echo "alias re='bash .reboot.sh'"
-echo "alias up='bash .update.sh'"
-echo ""
-echo "======================================"
-echo "Dconf Editor recommendation:"
-echo ""
-echo "Center Ubuntu Dock"
-echo "org/gnome/shell/extensions/dash-to-dock/extend-height"
-echo "Don't show mounted drives"
-echo "org/gnome/shell/extensions/dash-to-dock/show-mounts"
-echo "Dock background"
-echo "org/gnome/shell/extensions/dash-to-dock/custom-theme-running-dots-color (#00ff00))"
-echo "Show icon backlit"
-echo "org/gnome/shell/extensions/dash-to-dock/unity-backlit-items"
-echo ""
-echo "======================================"
-echo "Shell extensions recommendation"
-echo ""
-echo "https://extensions.gnome.org/extension/16/auto-move-windows/"
-echo "https://extensions.gnome.org/extension/949/bottompanel/"
-echo "https://extensions.gnome.org/extension/945/cpu-power-manager/"
-echo "https://extensions.gnome.org/extension/1082/cpufreq/"
-echo "https://extensions.gnome.org/extension/1160/dash-to-panel/"
-echo "https://extensions.gnome.org/extension/1011/dynamic-panel-transparency/"
-echo "https://extensions.gnome.org/extension/2/move-clock/"
-echo "https://extensions.gnome.org/extension/1128/hide-activities-button/"
-echo "https://extensions.gnome.org/extension/545/hide-top-bar/"
-echo "https://extensions.gnome.org/extension/600/launch-new-instance/"
-echo "https://extensions.gnome.org/extension/18/native-window-placement/"
-echo "https://extensions.gnome.org/extension/750/openweather/"
-echo "https://extensions.gnome.org/extension/8/places-status-indicator/"
-echo "https://extensions.gnome.org/extension/800/remove-dropdown-arrows/"
-echo "https://extensions.gnome.org/extension/3891/simple-monitor/"
-echo "https://extensions.gnome.org/extension/906/sound-output-device-chooser/"
-echo "https://extensions.gnome.org/extension/4055/spotify-artwork-fixer/"
-echo "https://extensions.gnome.org/extension/1266/transparent-top-bar/"
-echo "https://extensions.gnome.org/extension/19/user-themes/"
-echo "https://extensions.gnome.org/extension/21/workspace-indicator/"
-echo ""
-echo "======================================"
-echo "Shortcut recommendation:"
-echo ""
-echo "Atom					Ctrl+Alt+E"
-echo "Authy					Ctrl+Alt+A"
-echo "Calculator			Calculator"
-echo "Flameshot	gui			Print"
-echo "Gitkraken				Ctrl+Alt+G"
-echo "Home Folder			Ctrl+Alt+F"
-echo "Notion				Ctrl+Alt+N"
-echo "Settings				Ctrl+Alt+S"
-echo "Spotify				Ctrl+Alt+X"
-echo "Web Browser			Ctrl+Alt+W"
-echo "ViSual Studio Code	Ctrl+Alt+C"
-echo ""
 
 echo "======================================"
 echo "Puuhh, that was a lot of work"
@@ -883,7 +822,8 @@ echo ""
 read answer
 case "$answer" in
   y) echo "wird neugestartet"
-  			sudo reboot
+		sudo  pacman -Syu
+  		sudo reboot
     	;;
   n) echo "wird nicht neugestartet"
     	;;
