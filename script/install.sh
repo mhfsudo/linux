@@ -806,19 +806,9 @@ read answer
 case "$answer" in
 	y) echo "wird installiert"
 	    sudo pacman -S zsh
-			zsh --version
-		;;
-	n) echo "wird nicht installiert"
-		;;
-esac
-
-clear
-echo "======================================"
-echo "Oh-my-zsh Extension (y/n)"
-read answer
-case "$answer" in
-	y) echo "wird installiert"
-			sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+		zsh --version
+		sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+		firefox https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
 		;;
 	n) echo "wird nicht installiert"
 		;;
