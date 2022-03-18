@@ -827,16 +827,6 @@ esac
 sudo  pacman -Syu
 
 echo "======================================"
-echo "Alias recommendation:"
-echo "vim ~/.bashrc"
-echo "vim ~/.config/fish/config.fish"
-echo "vim ~/.zshrc"
-echo "alias po='bash .poweroff.sh'"
-echo "alias re='bash .reboot.sh'"
-echo "alias up='bash .update.sh'"
-echo ""
-
-echo "======================================"
 echo "Puuhh, that was a lot of work"
 echo "Don't forget the recommendations above!"
 echo "Should we reboot the System? (y/n)"
