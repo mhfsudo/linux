@@ -256,7 +256,7 @@ echo "GitKraken (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo snap install gitkraken --classic
+		sudo flatpak install flathub com.axosoft.GitKraken
 		;;
 	n) echo "wird nicht installiert"
 		;;
