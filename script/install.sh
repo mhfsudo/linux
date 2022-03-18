@@ -564,7 +564,7 @@ echo "Spotify (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-		sudo snap install spotify
+		sudo flatpak install flathub com.spotify.Client
 		;;
 	n) echo "wird nicht installiert"
 		;;
