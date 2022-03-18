@@ -491,7 +491,7 @@ echo "ProtonMail Electron (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-	    sudo snap install electron-mail
+	    sudo flatpak install flathub com.github.vladimiry.ElectronMail
 		;;
 	n) echo "wird nicht installiert"
 		;;
