@@ -721,7 +721,7 @@ echo "Visual Studio Code IDE (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-	    sudo snap install code --classic
+	    sudo flatpak install flathub com.visualstudio.code
 		;;
 	n) echo "wird nicht installiert"
 		;;
@@ -733,7 +733,7 @@ echo "Vivaldi Browser (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo pacman -S vivaldi
+		sudo pacman -S vivaldi
 		;;
 	n) echo "wird nicht installiert"
 		;;
