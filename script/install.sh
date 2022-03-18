@@ -636,7 +636,7 @@ echo "Threema (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-	    sudo snap install threemadeskaqua
+	    sudo flatpak install flathub io.bit3.ThreemaQTp
 		;;
 	n) echo "wird nicht installiert"
 		;;
