@@ -757,7 +757,7 @@ echo "Whatsapp (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-	    sudo snap install whatsdesk
+	    sudo flatpak install flathub io.github.mimbrero.WhatsAppDesktop
 		;;
 	n) echo "wird nicht installiert"
 		;;
