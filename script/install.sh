@@ -383,7 +383,7 @@ echo "Microsoft Teams (y/n)"
 read answer
 case "$answer" in
 	y) echo "wird installiert"
-			sudo snap install teams-insiders
+		sudo flatpak install flathub com.github.IsmaelMartinez.teams_for_linux
 		;;
 	n) echo "wird nicht installiert"
 		;;
